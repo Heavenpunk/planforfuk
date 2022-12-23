@@ -1,0 +1,80 @@
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: blanchedalmond;
+    margin:0;
+}
+header{
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    max-width: 1000px;
+}
+header h1{
+    margin-bottom:1rem;
+    font-size: 2.5rem;
+    color:black;
+}
+#new-task-form{
+    display:flex;
+}
+input, button{
+    appearance: none;
+    border:none;
+    background: none;
+    outline:none;
+    margin: 0.5em;
+}
+#new-task-submit:hover{
+    color: red;
+    font-size:1.2em;
+    opacity: 0.8;
+}
+#new-task-submit:active{
+    opacity:0.6;
+}
+input,:nth-child(3){
+    font-size:1em;
+}
+
+#new-task-input{
+    flex: 1 1 0%;
+    padding:0.8rem;
+    border-radius:1rem;
+    margin-right:0.5rem;
+    font-size: 1.0em;
+    background-color: rgb(255, 255, 255);
+    width:40em ;
+}
+main{
+    padding: 0rem 30rem;
+    border:0;
+    max-width: 800px;
+    width: 100%;
+    margin: 0;
+}
+.task-list{
+    padding: 1rem;
+}
+.task-list h2{
+    font-size:1.5rem;
+    font-weight: 530;
+    margin-bottom: 1rem;
+}
+#tasks .task{
+    display:flex;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 1rem;
+    margin:10px;
+    max-width: 1000px;
+    padding: 2rem,1rem;
+}
+.task .actions button:hover{
+    color: red;
+    opacity: 0.8;
+}
+.task .actions button:active{
+    opacity: 0.6;
+}
